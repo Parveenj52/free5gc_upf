@@ -27,7 +27,7 @@ global:
     scheme: http
   amf:
     n2if:  # NGAP
-      ipAddress: 10.212.14.26
+      ipAddress: 192.168.1.26
     service:
       ngap:
         enabled: false
@@ -38,7 +38,10 @@ global:
         type: NodePort
   smf:
     n4if:
-      ipAddress: 10.212.14.28
+      ipAddress: 192.168.1.28
+  upf:
+    n6if:
+      ipAddress: 10.212.14.60
   #Global network parametes
   # n2network:
   #   enabled: true
