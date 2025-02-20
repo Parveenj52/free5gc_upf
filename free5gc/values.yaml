@@ -27,7 +27,7 @@ global:
     scheme: http
   amf:
     n2if:  # NGAP
-      ipAddress: 192.168.1.26
+      ipAddress: 10.212.14.26
     service:
       ngap:
         enabled: false
@@ -38,7 +38,7 @@ global:
         type: NodePort
   smf:
     n4if:
-      ipAddress: 192.168.1.28
+      ipAddress: 10.212.14.28
   #Global network parametes
   # n2network:
   #   enabled: true
@@ -53,38 +53,38 @@ global:
     enabled: true
     name: n3network
     type: ipvlan
-    masterIf: eth0
-    subnetIP: 192.168.1.0
+    masterIf: eno12409np1
+    subnetIP: 10.212.14.0
     cidr: 24
-    gatewayIP: 192.168.1.1
-    excludeIP: 192.168.1.1
+    gatewayIP: 10.212.14.1
+    excludeIP: 110.212.14.1
   n4network:
     enabled: true
     name: n4network
     type: ipvlan
-    masterIf: eth0
-    subnetIP: 192.168.1.0
+    masterIf: eno12409np1
+    subnetIP: 10.212.14.0
     cidr: 24
-    gatewayIP: 192.168.1.25
-    excludeIP: 192.168.1.25
+    gatewayIP: 10.212.14.1
+    excludeIP: 10.212.14.1
   n6network:
     enabled: true
     name: n6network
     type: ipvlan
-    masterIf: wlp58s0
-    subnetIP: 10.100.210.0
+    masterIf: eno12409np1
+    subnetIP: 10.212.14.0
     cidr: 24
-    gatewayIP: 10.100.210.0
-    excludeIP: 10.100.210.0
+    gatewayIP: 10.212.14.1
+    excludeIP: 10.212.14.1
   n9network:
     enabled: true
     name: n9network
     type: ipvlan
-    masterIf: ens160
-    subnetIP: 192.168.1.0
+    masterIf: eno12409np1
+    subnetIP: 10.212.14.0
     cidr: 24
-    gatewayIP: 192.168.1.1
-    excludeIP: 192.168.1.1
+    gatewayIP: 10.212.14.1
+    excludeIP: 10.212.14.1
 
 
 # These parameters can be used to enable/disable deployment of subcharts
