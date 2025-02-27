@@ -27,7 +27,7 @@ global:
     scheme: http
   amf:
     n2if:  # NGAP
-      ipAddress: 192.168.1.26
+      ipAddress: 10.212.14.26
     service:
       ngap:
         enabled: false
@@ -38,7 +38,7 @@ global:
         type: NodePort
   smf:
     n4if:
-      ipAddress: 192.168.1.28
+      ipAddress: 10.212.14.28
   upf:
     n6if:
       ipAddress: 10.212.14.60
@@ -47,11 +47,11 @@ global:
   #   enabled: true
   #   name: n2network
   #   type: ipvlan
-  #   masterIf: ens160
-  #   subnetIP: 192.168.1.0
+  #   masterIf: eno12409np1
+  #   subnetIP: 10.212.14.0
   #   cidr: 24
-  #   gatewayIP: 192.168.1.25
-  #   excludeIP: 192.168.1.25
+  #   gatewayIP: 10.212.14.1
+  #   excludeIP: 10.212.14.1
   n3network:
     enabled: true
     name: n3network
