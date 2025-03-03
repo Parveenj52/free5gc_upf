@@ -27,7 +27,7 @@ global:
     scheme: http
   amf:
     n2if:  # NGAP
-      ipAddress: 10.212.14.26
+      ipAddress: 10.100.50.249
     service:
       ngap:
         enabled: false
@@ -38,38 +38,38 @@ global:
         type: NodePort
   smf:
     n4if:
-      ipAddress: 10.212.14.28
+      ipAddress: 10.100.50.244
   upf:
     n6if:
       ipAddress: 10.212.14.60
   #Global network parametes
-  # n2network:
-  #   enabled: true
-  #   name: n2network
-  #   type: ipvlan
-  #   masterIf: eno12409np1
-  #   subnetIP: 10.212.14.0
-  #   cidr: 24
-  #   gatewayIP: 10.212.14.1
-  #   excludeIP: 10.212.14.1
+   n2network:
+    enabled: true
+    name: n2network
+    type: ipvlan
+    masterIf: eno12399np0
+    subnetIP: 10.100.50.248
+    cidr: 29
+    gatewayIP: 10.100.50.254
+    excludeIP: 10.100.50.254
   n3network:
     enabled: true
     name: n3network
     type: ipvlan
-    masterIf: eno12409np1
-    subnetIP: 10.212.14.0
-    cidr: 24
-    gatewayIP: 10.212.14.1
-    excludeIP: 110.212.14.1
+    masterIf: eno12399np0
+    subnetIP: 10.100.50.232
+    cidr: 29
+    gatewayIP: 10.100.50.238
+    excludeIP: 10.100.50.238
   n4network:
     enabled: true
     name: n4network
     type: ipvlan
-    masterIf: eno12409np1
-    subnetIP: 10.212.14.0
-    cidr: 24
-    gatewayIP: 10.212.14.1
-    excludeIP: 10.212.14.1
+    masterIf: eno12399np0
+    subnetIP: 10.100.50.240
+    cidr: 29
+    gatewayIP: 10.100.50.246
+    excludeIP: 10.100.50.246
   n6network:
     enabled: true
     name: n6network
