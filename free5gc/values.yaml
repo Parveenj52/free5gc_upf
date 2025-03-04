@@ -57,10 +57,10 @@ global:
     name: n3network
     type: ipvlan
     masterIf: eno12399np0
-    subnetIP: 10.212.13.0
-    cidr: 24
-    gatewayIP: 10.212.13.1
-    excludeIP: 10.212.13.1
+    subnetIP: 10.100.50.232
+    cidr: 29
+    gatewayIP: 10.100.50.238
+    excludeIP: 10.100.50.238
   n4network:
     enabled: true
     name: n4network
