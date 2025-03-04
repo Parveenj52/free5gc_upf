@@ -76,7 +76,7 @@ upf:
   n4if:  # PFCP
     ipAddress: 10.100.50.241
   n6if:  # DN
-    ipAddress: 10.100.100.12
+    ipAddress: 10.212.13.60
 
   podAnnotations: {}
     # additional annotations
@@ -141,7 +141,7 @@ upf1:
   n4if:  # PFCP
     ipAddress: 10.100.50.242
   n6if:  # DN
-    ipAddress: 10.100.100.13
+    ipAddress: 10.212.13.61
 
   podAnnotations: {}
     # additional annotations
@@ -205,7 +205,7 @@ upf2:
   n4if:  # PFCP
     ipAddress: 10.100.50.243
   n6if:  # DN
-    ipAddress: 10.100.100.14
+    ipAddress: 10.212.13.62
 
   podAnnotations: {}
     # additional annotations
@@ -271,7 +271,7 @@ upfb:
   n4if:  # PFCP
     ipAddress: 10.100.50.241
   n6if:  # DN
-    ipAddress: 10.100.100.12
+    ipAddress: 10.212.13.63
 
   podAnnotations: {}
     # additional annotations
