@@ -41,7 +41,7 @@ global:
       ipAddress: 10.100.50.244
   upf:
     n6if:
-      ipAddress: 10.212.14.60
+      ipAddress: 10.212.13.60
   #Global network parametes
   #n2network:
     #enabled: true
@@ -56,11 +56,11 @@ global:
     enabled: true
     name: n3network
     type: ipvlan
-    masterIf: eno12409np1
-    subnetIP: 10.212.14.0
+    masterIf: eno12399np0
+    subnetIP: 10.212.13.0
     cidr: 24
-    gatewayIP: 10.212.14.1
-    excludeIP: 10.212.14.1
+    gatewayIP: 10.212.13.1
+    excludeIP: 10.212.13.1
   n4network:
     enabled: true
     name: n4network
@@ -74,20 +74,20 @@ global:
     enabled: true
     name: n6network
     type: ipvlan
-    masterIf: eno12409np1
-    subnetIP: 10.212.14.0
+    masterIf: eno12399np0
+    subnetIP: 10.212.13.0
     cidr: 24
-    gatewayIP: 10.212.14.1
-    excludeIP: 10.212.14.1
+    gatewayIP: 10.212.13.1
+    excludeIP: 10.212.13.1
   n9network:
     enabled: true
     name: n9network
     type: ipvlan
-    masterIf: eno12409np1
-    subnetIP: 10.212.14.0
+    masterIf: eno12399np0
+    subnetIP: 10.212.13.0
     cidr: 24
-    gatewayIP: 10.212.14.1
-    excludeIP: 10.212.14.1
+    gatewayIP: 10.212.13.1
+    excludeIP: 10.212.13.1
 
 
 # These parameters can be used to enable/disable deployment of subcharts
